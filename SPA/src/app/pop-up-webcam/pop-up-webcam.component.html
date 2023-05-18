@@ -1,0 +1,32 @@
+<div class="popup-webcam-container">
+  <h2> Take your picture!</h2>
+  <div class="outer-div">
+    
+    <div class="inner-div">
+        <webcam
+          [trigger]="invokeObservable"
+          (imageCapture)="captureImg($event)">
+        </webcam>
+
+        <button (click)="getSnapshot()">
+          Capture Image
+        </button>
+  
+    </div>
+
+    <div class="inner-div" *ngIf="isVisible">
+      <img [src]="sysImage"/>
+
+      <button (click)="setDefinitiveImage()">
+        Use this image
+      </button>
+
+  
+    </div>
+
+  </div>
+</div>
+
+  
+  
+  

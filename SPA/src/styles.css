@@ -1,0 +1,18 @@
+.cdk-global-overlay-wrapper{
+    height: 100%;
+    display: flex;
+}
+
+.cdk-overlay-pane{
+    width: 100%;
+    max-width: 90vw !important;
+}
+
+video{
+    width: 400px !important;
+    height: 300px !important;
+}
+
+_ngcontent-khm-c40{
+	width: 0% !important;
+}
